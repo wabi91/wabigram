@@ -35,8 +35,35 @@ Many to one || One to many
 
 Django \_set
 
-1. Automagically groups all the related objects into a property
+1.  Automagically groups all the related objects into a property
 
-2. To call all the objects related to the owner all we have to do is call 'modelName_set'
+2.  To call all the objects related to the owner all we have to do is call 'modelName_set'
 
-3. For the cat model it would be cat_set
+3.  For the cat model it would be cat_set
+
+
+        wabis = Owner.objects.get(id=1)
+        wabi_cats = wabis.cat_set.all()
+
+Many to many : Many users can follow many users
+
+pk = primary key
+
+---
+
+## Many to one || One to many || Many to many ???
+
+    Image can have many comment.
+    Image can have many Like
+    User can have many Image
+    User can have many comment
+    User can have many Like
+
+### Djnago 외래키 사용 주의
+
+    Since Django 2.0 The ForeignKey field requires two positional arguments.(The model to map, on_delete argument)
+
+    for example :
+    ...
+    models.ForeignKey(users_model.User, on_delete=models.PROTECT)
+    ...
