@@ -20,7 +20,11 @@ Cloning instagram with Python Django and React / React Native
     sync       Installs all packages specified in Pipfile.lock.
     uninstall  Un-installs a provided package and removes it from Pipfile.
 
-### 1.27 : Django
+---
+
+## 1.27 : Django
+
+---
 
 메타는 해당 클래스의 Extra정보
 장고는 DataBase에 어떤 정보가 올지 읽는다. 모델링 이후 마이그레이션은 필수.
@@ -67,3 +71,33 @@ pk = primary key
     ...
     models.ForeignKey(users_model.User, on_delete=models.PROTECT)
     ...
+
+---
+
+## 1.31 : HTTP Documentation
+
+---
+
+HTTP = hypertext Transfer Protocol
+
+1. Client
+2. Server
+
+-> Requests
+-> Responses
+
+--> Cosume a resource
+--> Create a resource
+--> Update a resource
+--> Delete a resource
+
+GET, POST, PUT, DELETE
+
+    Headers :
+        { GET host : google.com }
+    Body
+
+    Headers :
+
+    Body
+        HTML
