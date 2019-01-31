@@ -86,18 +86,45 @@ HTTP = hypertext Transfer Protocol
 -> Requests
 -> Responses
 
---> Cosume a resource
---> Create a resource
---> Update a resource
---> Delete a resource
+--> Cosume a resource : GET
+--> Create a resource : POST
+--> Update a resource : PUT
+--> Delete a resource : DELETE
 
-GET, POST, PUT, DELETE
+---
 
-    Headers :
-        { GET host : google.com }
-    Body
+### 1-28 Basic REST API Design Concepts
 
-    Headers :
+Bad API Design
 
-    Body
-        HTML
+    /getAllDogs
+    /scheduleWalkOnThePark
+    /getDowOwener
+
+> NOUNS ARE GOOD, VERBS ARE BAD
+
+Good API Design
+
+    GET -> /dogs
+    POST -> /dogs
+    PUT -> /dogs
+    DELETE -> /dogs
+
+    GET -> /dogs/kung
+    POST -> /dogs/kung (error)
+    PUT -> /dogs/kung (if Kung exists update, if not error)
+    DELETE -> /dogs/kung
+
+    GET -> /dogs/search?color=brown
+
+
+    GET /owners/wabi/dogs -> List of all the dogs that Wabi has.
+    POST /owners/wabi/dogs -> Create a dog for Wabi
+    PUT /owners/wabi/dogs -> Update all of Wabi's dogs
+    DELETE /owners/wabi/dogs -> Delete!
+
+    GET -> /dogs/search?color=brown
+    GET -> /owners/wabi/dogs/search?color=brown
+
+    /v1/dogs/search?color=brown
+    /v2/dogs/search?color=brown
