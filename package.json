@@ -2,10 +2,6 @@
   "name": "wabigram",
   "version": "1.0.0",
   "description": "Cloning instagram for studying orm and developing both FE and BE side",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wabi91/wabigram.git"
@@ -15,5 +11,19 @@
   "bugs": {
     "url": "https://github.com/wabi91/wabigram/issues"
   },
-  "homepage": "https://github.com/wabi91/wabigram#readme"
+  "homepage": "https://github.com/wabi91/wabigram#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
 }
