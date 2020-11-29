@@ -15,6 +15,7 @@
   "dependencies": {
     "@graphql-tools/load-files": "^6.2.5",
     "@graphql-tools/merge": "^6.2.6",
+    "@prisma/client": "^2.12.1",
     "apollo-server": "^2.19.0",
     "dotenv": "^8.2.0",
     "graphql-yoga": "^1.18.3",
@@ -25,9 +26,12 @@
     "@babel/core": "^7.12.9",
     "@babel/node": "^7.12.6",
     "@babel/preset-env": "^7.12.7",
+    "@prisma/cli": "^2.12.1",
     "nodemon": "^2.0.6"
   },
   "scripts": {
+    "migrate:update": "prisma migrate up --experimental",
+    "migrate": "prisma migrate save --experimental",
     "dev": "nodemon --exec babel-node src/server.js"
   }
 }
