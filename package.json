@@ -30,6 +30,7 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
+    "studio": "prisma studio",
     "migrate:update": "prisma migrate up --experimental",
     "migrate": "prisma migrate save --experimental",
     "dev": "nodemon --exec babel-node src/server.js"
