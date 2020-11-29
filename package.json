@@ -1,0 +1,19 @@
+{
+  "name": "wabigram",
+  "version": "1.0.0",
+  "description": "Cloning instagram for studying orm and developing both FE and BE side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wabi91/wabigram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wabi91/wabigram/issues"
+  },
+  "homepage": "https://github.com/wabi91/wabigram#readme"
+}
