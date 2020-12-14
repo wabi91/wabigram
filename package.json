@@ -17,7 +17,11 @@
     "@graphql-tools/merge": "^6.2.6",
     "@prisma/client": "^2.13.0",
     "apollo-server": "^2.19.0",
+    "apollo-server-core": "^2.19.0",
+    "apollo-server-express": "^2.19.0",
+    "apollo-server-lambda": "^2.19.0",
     "dotenv": "^8.2.0",
+    "graphql-playground-html": "^1.6.29",
     "graphql-yoga": "^1.18.3",
     "morgan": "^1.10.0"
   },
