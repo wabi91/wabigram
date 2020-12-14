@@ -31,8 +31,8 @@
   },
   "scripts": {
     "studio": "prisma studio",
-    "migrate:update": "prisma migrate up --experimental",
-    "migrate": "prisma migrate save --experimental",
+    "migrate:drop": "prisma migrate reset --preview-feature",
+    "migrate": "prisma migrate dev --preview-feature",
     "dev": "nodemon --exec babel-node src/server.js"
   }
 }
